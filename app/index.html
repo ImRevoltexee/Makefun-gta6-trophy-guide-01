@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>GTA VI Trophy Guide — Leonida Legend Tracker</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="top">
+  <div class="titleblock">
+    <h1>LEONIDA LEGEND <span>Trophy Guide</span></h1>
+    <p class="sub">Grand Theft Auto VI &middot; PlayStation 5 &middot; 55 trophies &middot; 1 platinum, 2 gold, 6 silver, 46 bronze &middot; all single-player, no online trophies &middot; works fully offline</p>
+  </div>
+  <div class="progressblock">
+    <div class="bigcount"><strong id="earnedCount">0</strong><span>/ 55 earned</span></div>
+    <div class="bar"><div id="barFill"></div></div>
+    <div class="gradecounts" id="gradeCounts"></div>
+  </div>
+</header>
+
+<section class="controls" aria-label="Filters">
+  <input id="search" type="search" placeholder="Search trophy name or description…" autocomplete="off">
+  <label>Grade <select id="gradeFilter"><option value="all">All grades</option><option value="platinum">Platinum</option><option value="gold">Gold</option><option value="silver">Silver</option><option value="bronze">Bronze</option></select></label>
+  <label>Kind <select id="kindFilter"><option value="all">All kinds</option><option value="story">Story</option><option value="missable">Missable</option><option value="collectibles">Collectibles</option><option value="activities">Activities</option><option value="online">Online</option></select></label>
+  <label class="check"><input id="spoilerToggle" type="checkbox" checked> Spoiler mode — hide story names until earned</label>
+  <label class="check"><input id="hideEarned" type="checkbox"> Hide earned</label>
+  <button id="exportBtn" type="button">Export progress</button>
+  <label class="importbtn">Import progress <input id="importFile" type="file" accept="application/json"></label>
+  <button id="resetBtn" type="button" class="danger">Reset</button>
+</section>
+
+<main class="layout">
+  <section class="listcol" aria-label="Trophy checklist">
+    <div class="listhead"><h2>Checklist <span id="shownCount"></span></h2><span class="hint">Click a trophy to open its guide →</span></div>
+    <ol id="trophyList" class="trophyList"></ol>
+  </section>
+
+  <aside class="detailcol" aria-label="Trophy detail">
+    <div id="detailPane" class="detail">
+      <p class="pick">Select a trophy on the left to read its full guide, sources and your note.</p>
+    </div>
+    <div class="planner" id="plannerBox">
+      <h2>Next up — your planner</h2>
+      <p class="plannerIntro">Suggested from what you have earned so far. Story first, then the one missable, then the quick wins.</p>
+      <ol id="nextUp" class="nextup"></ol>
+    </div>
+  </aside>
+</main>
+
+<section class="roadmap" id="roadmap">
+  <h2>Platinum roadmap — Vice Got a Price!</h2>
+  <p class="roadIntro">One playthrough is enough (PowerPyx). No difficulty trophies, no mission medals, no online trophies. About 200 hours, difficulty 4/10. Cheats disable trophies and saving — keep them off. There is no mission replay, so keep a manual save at the start of every chapter and one before the final mission.</p>
+  <ol class="steps">
+    <li><strong>Step 1 — Chapter 1, do the one missable thing.</strong> After the mission Down to Earth, talk to Lucia in the kitchen in the morning, follow her to the balcony and accept the meditation. <span class="flag">⚠ POSSIBLY MISSABLE — Positive Mental Attitude</span> (PowerPyx: unconfirmed whether it is required, doing it is the safe choice). Then finish Chapter 1.</li>
+    <li><strong>Step 2 — Play the story, Chapters 2–4.</strong> Finish every main mission and the named mission trophies (Gone Fishing, Breakfast Run, The Cartel Heist, Child's Play, Headliners, VCIA Takedown, Operation Savage Glory). Chapters 2+ open the partner trophies and free roam. Scan new vehicles and study animals with binoculars as you go — the 100% checklist counts progress made during the story.</li>
+    <li><strong>Step 3 — Side strands.</strong> Finish the final missions for Andy, Kenton, Billy, Randy and Tyrone, and complete 8 stranger mission strands (Strangers &amp; Freaks). Hunt Bret's unique animal. These stay available after the credits.</li>
+    <li><strong>Step 4 — Activities grind.</strong> 250 stunts, 42 shooting-range gold medals, 20 race wins, drone races at all 14 locations, fishing vs Cal, one arcade game, bowling, 50 challenges. Try each of the 9 activity types once for Master of None.</li>
+    <li><strong>Step 5 — Robberies &amp; money.</strong> 5 bank vaults, 1 armored truck, 1 illegal operation per gang (9 gangs), 3 shops back-to-back with your partner, a jewelry store undetected, 4-star wanted escape with your partner. Launder $250,000 of Marked Bills, spend $100,000 in shops, buy all 8 garages.</li>
+    <li><strong>Step 6 — Collectibles &amp; exploration.</strong> 3 card sets, WAiNK It at 100 locations, discover 100 vehicles, explore all 52 areas, meditate at all 18 spots, register 10 vehicles in Scooter Bros.</li>
+    <li><strong>Step 7 — The 100% checklist, then platinum.</strong> Open Progress → Stats → 100% Completion and finish it (A Long Road, gold). It is lenient — about 60% of everything, roughly 200 of 277 vehicles, 100 of 255 animals, 70 of 80 challenges. The platinum pops with the last trophy.</li>
+  </ol>
+  <div class="missbox">
+    <h3>Missable trophies — the full list</h3>
+    <p><strong>Only one is possibly missable: Positive Mental Attitude</strong> (meditate at every spot) — the Chapter 1 balcony meditation with Lucia. Every other trophy is confirmed obtainable after the story in free roam, and nothing toward 100% is missable (PowerPyx, GTABase). A few optional missions and magazine collectibles disappear, but they do not affect any trophy.</p>
+  </div>
+  <p class="sourcesline">Roadmap sources: <a href="https://www.powerpyx.com/gta-6-grand-theft-auto-vi-trophy-guide-roadmap/">PowerPyx — GTA 6 Trophy Guide &amp; Roadmap</a> · <a href="https://www.gtabase.com/articles/gta-6/gta-6-achievements-trophies-list-ps5-xbox-series">GTABase — GTA 6 Trophy Guide</a> · <a href="https://www.exophase.com/game/grand-theft-auto-vi-psn/trophies/">Exophase — GTA VI trophies</a> · <a href="https://psnprofiles.com/trophies/43531-grand-theft-auto-vi">PSNProfiles — GTA VI trophies</a></p>
+</section>
+
+<footer>
+  <p>Names and descriptions are the official PlayStation list. Guides are written in my own words for this entry and cite their sources beside each trophy; where no source pins a location or step down yet, the guide says so instead of inventing one. No Rockstar logo or artwork is used. Progress is saved only in your browser (localStorage) — nothing leaves your device.</p>
+</footer>
+<script type="module" src="app.js"></script>
+</body>
+</html>
